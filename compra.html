@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Login na JFK</title>
+</head>
+<body class="body-login">
+  <br>
+  <br>
+  <br>
+  <header>
+
+    <!--Barra de Navegação-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand text-white" href="index.html">JFK - Pacotes Turísticos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(Página atual)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pacotes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="praiapack.html">Praia</a>
+                  <a class="dropdown-item" href="campopack.html">Campo</a>
+                  <a class="dropdown-item" href="serrapack.html">Serra</a>
+                  <a class="dropdown-item" href="cidadepack.html">Cidade</a>
+                  <a class="dropdown-item" href="nacionaispack.html">Nacionais</a>
+                  <a class="dropdown-item" href="internacionaispack.html">Internacionais</a>
+                </div>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="sobre.html">Sobre a JFK</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="login.html">Minha Conta</a>
+              </li>
+            </li>
+          </ul>
+        </div>
+      </nav>    
+</header>
+  
+<div class="containercompra">
+    <div class="row">
+        <div class="col-sm-5">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                             
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-7">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 panel-title>Informações do Usuário</h3>
+                </div>
+            <div class="panel-body">
+            <form>
+                <fieldset>
+
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input id="nome" type="text" class="form-control" placeholder="Digite seu nome completo" >
+                    </div>
+
+                    <div class="form-group">                                    
+                            <label for="email">Email</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"></span>
+                                <input id="email" type="email" class="form-control" placeholder="Digite seu email">
+                            </div>                                    
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" type="text" class="form-control" placeholder="Digite seu CPF">
+                    </div>
+
+                    <div class="ckeckbox">
+                        <label>
+                            <input type="checkbox" id="novidade" value="sim" checked="checked">
+                            Desejo receber novidades.
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Forma de pagamento</legend>
+                        <div class="form-group">
+                            <label for="bandeira">Bandeira:</label>
+                            <select id="bandeira" class="form-control">
+                                <option value="visa">Visa</option>
+                                <option value="mastercard">Master Card</option>
+                                <option value="americanexpress">American Express</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="numerocartao">Número do Cartão</label>
+                            <input id="numerocartao" type="text" class="form-control" placeholder="Digite o número do cartão"></input>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="validade">Validade</label>
+                            <input id="validade" type="month" class="form-control"></input>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input id="cvv" type="text" maxlength="3" class="form-control" placeholder="Digite o código de segurança"></input>
+                        </div>
+                </fieldset>
+                <button type="submit" class="btn btn-primary">
+                    <a href="comprafinal.html" class="btn btn-primary">Finalizar Compra</a>
+                </button>
+            </form>
+            </div>
+            </div>
+        </div>                    
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+      <footer class="footerlogin">
+        &copy; 2024 JFK - Pacotes Turísticos | Todos os direitos reservados
+      </footer>
+
+
+          <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
